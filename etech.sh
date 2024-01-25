@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 function auth() {
   curl -s -o /dev/null 'https://www.etechschoolonline.com/login.htm' -c cookie.txt
   COOKIE=$(cat cookie.txt | grep -Eo "[0-9A-Z]{32}")
